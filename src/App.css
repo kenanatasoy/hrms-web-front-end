@@ -1,3 +1,63 @@
 .App {
   text-align: center;
 }
+
+.about{ 
+  height: 34em; 
+  background-color: #f2f5fa 
+}
+
+.about-header{
+  font-size: 4rem !important
+}
+
+.jobdetail-header{ 
+  height: 30em; 
+  background-color: #f2f5fa 
+}
+
+.jobdetail-title{ 
+  font-size: 4rem !important
+}
+
+.jobdetail-container{
+  margin-top: 3em;
+  height: 35em;
+}
+
+ .job-advert-card{
+  box-shadow: 0.8px 0.8px 8px #888888 !important
+}
+
+.job-advert-card:hover{
+  box-shadow: 1px 1px 8px #21ba45 !important
+}
+
+.button{
+  background-color: white !important;
+  color: #21ba45 !important;
+  font-weight: 400 !important;
+  font-size: 1.1rem !important;
+  border: 1px solid #21ba45 !important
+}
+
+.button:hover{
+  background-color: #21ba45 !important;
+  color: white !important
+}
+
+.select:hover{
+  border: 0.6px solid #21ba45 !important
+}
+
+.footer-lists-titles{
+  text-align: left;
+  font-size: 2.2rem !important;
+  color: white !important;
+  font-weight: 180 !important
+} 
+
+.footer-lists{
+  text-align: left;
+  line-height: 225%;
+}

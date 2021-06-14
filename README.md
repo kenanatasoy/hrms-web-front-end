@@ -1,5 +1,5 @@
-## UML Component Diagram 
-![UML Diagram](https://imgur.com/1GOVXH9.png)
+# UML Component Diagram 
+![UML Component Diagram](https://imgur.com/1GOVXH9.png)
 
 # Getting Started with Create React App
 
