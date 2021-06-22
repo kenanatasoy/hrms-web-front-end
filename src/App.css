@@ -16,6 +16,10 @@
   background-color: #f2f5fa 
 }
 
+.cv-form-headers{
+  text-align:left
+}
+
 .jobdetail-title{ 
   font-size: 4rem !important
 }
@@ -26,7 +30,8 @@
 }
 
  .job-advert-card{
-  box-shadow: 0.8px 0.8px 8px #888888 !important
+  box-shadow: 0.8px 0.8px 8px #888888 !important;
+  width: 100% !important
 }
 
 .job-advert-card:hover{
@@ -46,18 +51,73 @@
   color: white !important
 }
 
+.button.reset{
+  background-color: rgb(255, 255, 255) !important;
+  color: rgb(219, 40, 40) !important;
+  font-weight: 400 !important;
+  font-size: 1.1rem !important;
+  border: 1px solid rgb(219, 40, 40) !important
+}
+
+.button.reset:hover{
+  background-color: rgb(219, 40, 40) !important;
+  color: rgb(255, 255, 255) !important
+}
+
 .select:hover{
   border: 0.6px solid #21ba45 !important
 }
 
 .footer-lists-titles{
-  text-align: left;
-  font-size: 2.2rem !important;
-  color: white !important;
-  font-weight: 180 !important
+  text-align: center;
+  font-size: 1.5em !important;
+  color: rgba(36, 174, 97, 0.99) !important;
+  font-weight: 180 !important;
 } 
 
 .footer-lists{
-  text-align: left;
+  text-align: center;
   line-height: 225%;
+  color: white;
+}
+
+.footer-container{
+  font-size: 15px;
+  display: flex !important;
+  flex-flow: row wrap !important;
+  justify-content: center !important;
+  align-items: center !important;
+  color: black !important;
+}
+
+@media (max-width: 600px) {
+  .footer-container {
+    flex-flow: column wrap;
+  }
+}
+
+.footer-element{
+  flex: 25%
+  
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px){
+  .footer-element{
+    flex: 50%;
+    margin-top: 0
+  }
+  .footer-element:nth-child(n+3){
+    margin-top: 2em
+  }
+}
+
+@media only screen and (min-width: 320px) and (max-width: 767px){
+  .footer-element{
+    flex: 100%;
+    margin-top: 2em
+  }
+
+  .footer-element:first-child{
+    margin-top: 0
+  }
 }

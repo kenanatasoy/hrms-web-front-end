@@ -14,13 +14,14 @@ import JobAdvertService from "../services/JobAdvertService";
 import { NavLink } from "react-router-dom";
 
 export default function JobAdvertDetail() {
+  
   let { id } = useParams();
 
   const [jobAdvert, setJobAdvert] = useState({});
 
   useEffect(() => {
     let jobAdvertService = new JobAdvertService();
-    jobAdvertService.getByJobAdvertId(id).then((result) => {
+    jobAdvertService.getJobAdvertByIdAndActiveTrue(id).then((result) => {
       setJobAdvert(result.data.data);
       console.log(result.data.data);
     });

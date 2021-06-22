@@ -14,6 +14,7 @@ import CityService from "../services/CityService";
 import { NavLink } from "react-router-dom";
 
 export default function Home() {
+
   const [jobTitles, setJobTitles] = useState([]);
   const [cities, setCities] = useState([]);
   const [jobAdverts, setJobAdverts] = useState([]);
@@ -47,7 +48,7 @@ export default function Home() {
   useEffect(() => {
     let jobAdvertService = new JobAdvertService();
     jobAdvertService
-      .getJobAdverts()
+      .getJobAdvertsByActiveTrue()
       .then((result) => setJobAdverts(result.data.data));
   }, []);
 
@@ -81,16 +82,19 @@ export default function Home() {
             clearable
             options={cities}
           />
+          &nbsp;
           <Select
             className="select"
             placeholder="Select a job title"
             clearable
             options={jobTitles}
           />
+          &nbsp;
           <Button positive>Search</Button>
         </Form>
       </Container>
-      <Container>
+      <Container style={{
+          marginBottom: "2em"}}>
         <Header as="h1" textAlign="center" style={{ marginTop: "1.40em" }}>
           Job Adverts
         </Header>

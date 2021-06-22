@@ -1,5 +1,5 @@
 import React from "react";
-import { Grid, Container, Icon, List, Header } from "semantic-ui-react";
+import { Container, Icon, List, Header } from "semantic-ui-react";
 
 export default function Footer() {
   return (
@@ -7,70 +7,63 @@ export default function Footer() {
       <Container
         fluid
         style={{
-          marginTop: "2rem",
-          backgroundColor: "#7a807c",
-          color: "white",
-          height: "20rem",
-          alignItems: "center",
-          display: "flex",
+          backgroundColor: "black",
+          paddingTop: "2rem",
+          paddingBottom: "2rem",
         }}
       >
-        <Container>
-          <Grid>
-            <Grid.Column mobile={16} tablet={8} computer={4}>
-              <Header className="footer-lists-titles">Get in touch</Header>
-              <List className="footer-lists">
-                <List.Content>
-                  <Icon name="phone" />
-                  +90 0(212) 345 678 102
-                </List.Content>
-                <List.Content>
-                  <Icon name="mail" />
-                  info@example.com
-                </List.Content>
-                <List.Content>
-                  <Icon name="world" />
-                  www.example.com
-                </List.Content>
-                <List.Content>
-                  <Icon name="location arrow" />
-                  Address goes here.
-                </List.Content>
-              </List>
-            </Grid.Column>
-            <Grid.Column mobile={16} tablet={8} computer={4}>
-              <Header className="footer-lists-titles">By regions</Header>
-              
-              <List className="footer-lists">
-                <List.Content>North America</List.Content>
-                <List.Content>Europe</List.Content>
-                <List.Content>China</List.Content>
-                <List.Content>Brazil</List.Content>
-              </List>
-            </Grid.Column>
-            <Grid.Column mobile={16} tablet={8} computer={4}>
-              <Header className="footer-lists-titles">Job Types</Header>
-              <List className="footer-lists">
-                <List.Content>Full Time Job</List.Content>
-                <List.Content>Part Time Job</List.Content>
-                <List.Content>Temporary Job</List.Content>
-                <List.Content>Internship Job</List.Content>
-                <List.Content>Developer</List.Content>
-              </List>
-            </Grid.Column>
-            <Grid.Column mobile={16} tablet={8} computer={4}>
-              <Header className="footer-lists-titles">Jobs By Keywords</Header>
-              <List className="footer-lists">
-                <List.Content>Graphic Designer</List.Content>
-                <List.Content>HTML Designer</List.Content>
-                <List.Content>WP Developer</List.Content>
-                <List.Content>Joomla Developer</List.Content>
-                <List.Content>Content Creator</List.Content>
-              </List>
-            </Grid.Column>
-          </Grid>
+        <Container className="footer-container">
+          <div className="footer-element">
+            <Header className="footer-lists-titles">Contact</Header>
+            <List className="footer-lists">
+              <List.Content>
+                <Icon name="phone" />
+                +90 0(212) 345 678 102
+              </List.Content>
+              <List.Content>
+                <Icon name="mail" />
+                info@example.com
+              </List.Content>
+              <List.Content>
+                <Icon name="world" />
+                www.example.com
+              </List.Content>
+              <List.Content>
+                <Icon name="location arrow" />
+                Address goes here.
+              </List.Content>
+            </List>
+          </div>
+          <div className="footer-element">
+            <Header className="footer-lists-titles">Regions</Header>
+            <List className="footer-lists">
+              <List.Content>North America</List.Content>
+              <List.Content>Europe</List.Content>
+              <List.Content>China</List.Content>
+              <List.Content>Brazil</List.Content>
+            </List>
+          </div>
+          <div className="footer-element">
+            <Header className="footer-lists-titles">Job Types</Header>
+            <List className="footer-lists">
+              <List.Content>Full Time Job</List.Content>
+              <List.Content>Part Time Job</List.Content>
+              <List.Content>Temporary Job</List.Content>
+              <List.Content>Internship Job</List.Content>
+            </List>
+          </div>
+          <div className="footer-element">
+            <Header className="footer-lists-titles">Keywords</Header>
+            <List className="footer-lists">
+              <List.Content>Graphic Designer</List.Content>
+              <List.Content>WP Developer</List.Content>
+              <List.Content>Joomla Developer</List.Content>
+              <List.Content>Content Creator</List.Content>
+            </List>
+          </div>
         </Container>
       </Container>
+
       <Container
         fluid
         style={{
@@ -79,7 +72,7 @@ export default function Footer() {
           backgroundColor: "rgba(36, 174, 97, 0.99)",
           alignItems: "center",
           display: "flex",
-          fontSize: "1.1rem"
+          fontSize: "1.1rem",
         }}
       >
         <p style={{ flex: "1" }}>

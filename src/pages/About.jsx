@@ -33,7 +33,7 @@ export default function About() {
             <Image src="/images/wireframe/paragraph.png" />
           </Grid.Column>
           <Grid.Column>
-            <h2>About Job Here</h2>
+            <h2>About JobHere</h2>
             <Divider></Divider>
             <p>
               <strong>

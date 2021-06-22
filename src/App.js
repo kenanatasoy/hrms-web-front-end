@@ -1,11 +1,11 @@
-import './App.css'
 import 'semantic-ui-css/semantic.min.css'
-import Dashboard from './layouts/Dashboard';
+import Application from './layouts/Application.jsx';
+import './App.css'
 
 function App() {
   return (
     <div className="App">
-      <Dashboard />
+      <Application />
     </div>
   );
 }
