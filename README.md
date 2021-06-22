@@ -1,3 +1,8 @@
+# About The Project
+## Design
+
+![screencapture-localhost-3000-2021-06-15-00_48_00](https://user-images.githubusercontent.com/35261110/121964156-c1b91f00-cd73-11eb-84d0-9be47618f84a.png)
+
 # UML Component Diagram 
 ![UML Component Diagram](https://imgur.com/1GOVXH9.png)
 
